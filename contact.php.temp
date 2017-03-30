@@ -1,0 +1,93 @@
+<?php 
+// require dbconnect?
+$db_reqP = 0;
+require_once('scripts/global.php');
+/*
+contact.php 
+Created on Tuesday, April 22, 2003
+Contact Page for Worlds of Play
+
+Author - Joshua O'Connor-Rose
+
+*/
+
+// the following variables must be provided on the page
+$title = CON_NAME . ": Contacts";
+// pageID for navigation bar
+$pageID = "con_contact";
+// styleTemplate
+$css_template = "default";
+
+require_once('con_start.php');
+?>
+
+<div align="center" class="heading"><?= $title?></div>
+<div style="margin: 10pt;">
+<?= CON_NAME ?>: Contacts
+<table>
+
+<tr>
+	<td class="note">Joshua O'Connor-Rose:</td>
+	<td class="note" style="color:blue;">Designer, Developer, Webmaster</td>
+</tr>
+<tr>
+	<td class="body"></td>
+	<td class="note">joshua.oconnorrose AT gmail DOT com</td>
+</tr>
+<tr>
+	<td class="body"></td>
+	<td class="body"></td>
+</tr>
+
+<tr>
+	<td class="note">Greg Marks:</td>
+	<td class="note" style="color:blue;">Coordinator</td>
+</tr>
+<tr>
+	<td class="body"></td>
+	<td class="note"><a href="mailto:skerrit@wi.rr.com">skerrit@wi.rr.com</a></td>
+</tr>
+<tr>
+	<td class="body"></td>
+	<td class="body"></td>
+</tr>
+
+<tr>
+	<td class="note">Rick Brown:</td>
+	<td class="note" style="color:blue;">Coordinator</td>
+</tr>
+<tr>
+	<td class="body"></td>
+	<td class="note"><a href="mailto:skerrit@wi.rr.com">lionsquest2000@yahoo.com</a></td>
+</tr>
+<tr>
+	<td class="body"></td>
+	<td class="body"></td>
+</tr>
+
+<tr>
+	<td class="note">Gary Affeldt:</td>
+	<td class="note" style="color:blue;">Coordinator</td>
+</tr>
+<tr>
+	<td class="body"></td>
+	<td class="note"><a href="mailto:gaffeldt@sbcglobal.net">gaffeldt@sbcglobal.net</a></td>
+</tr>
+<tr>
+	<td class="body"></td>
+	<td class="body"></td>
+</tr>
+
+<tr>
+	<td class="note">Todd Ammerman:</td>
+	<td class="note" style="color:blue;">Coordinator</td>
+</tr>
+<tr>
+	<td class="body"></td>
+	<td class="note"><a href="mailto:calentir@gmail.com">calentir@gmail.com</a></td>
+</tr>
+</table>
+</div>
+<?php
+require_once('con_end.php');
+?>

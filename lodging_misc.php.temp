@@ -1,0 +1,38 @@
+<?php 
+// require dbconnect?
+$db_reqP = 0;
+require_once('scripts/global.php');
+/*
+lodging_misc.php 
+Sunday, November 07, 2004
+lodging and misc for cows or convention
+
+Author - Joshua O'Connor-Rose
+
+*/
+
+// the following variables must be provided on the page
+$title = CON_NAME . ": Lodging";
+// pageID for navigation bar
+$pageID = "con_lodging";
+// styleTemplate
+$css_template = "default";
+
+require_once('con_start.php');
+?>
+
+<div align="center" class="heading"><?= $title?></div>
+<div style="margin: 10pt;">
+<p><strong><?= CON_NAME ?>: Lodging &amp; Travel Info</strong><br></p>
+<a href="http://www.wsfp.state.wi.us/home/wsfp/PARK_FACITIES/youth_dorm.htm">Tommy Thompson Youth Center</a><br>
+640 S. 84th Street<br>
+West Allis, WI 53214<br>
+<br>
+  Cheri Gravitter<br>
+414-266-7042<br>
+cheri.gravitter@sfp.state.wi.us<br>
+
+</div>
+<?php
+require_once('con_end.php');
+?>

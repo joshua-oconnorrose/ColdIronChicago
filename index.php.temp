@@ -1,0 +1,46 @@
+<?php 
+$db_reqP = 0;
+require_once('scripts/global.php');
+/*
+index.php 
+Created on Thursday, March 27, 2003
+Entry Page for Worlds of Play
+
+4/22/03 - modified for con
+*/
+// the following variables must be provided on the page
+$title = CON_NAME. ":Home";
+// pageID for navigation bar
+$pageID = "con_home";
+// require dbconnect?
+$db_reqP = 0;
+// styleTemplate
+$css_template = "default";
+
+require_once('con_start.php');
+?>
+
+<div align="center" class="heading"><?=CON_NAME?></div>
+
+<div style="margin: 10pt;">
+<?
+if (strlen($attributes["msg"])){
+echo "<span class='error'>".$attributes["msg"]."</span><p />";
+}
+?>
+	<p>Location: <a href="http://www.wsfp.state.wi.us/home/wsfp/PARK_FACITIES/youth_dorm.htm">Tommy Thompson Youth Center</a><br></p>
+	<p><strong>March 13th-16th</strong> <br>
+	Opens: Thursday March 13th - 6 pm <br>
+	Closes: Sunday March 16th - 6pm</p>
+	<p><strong>Cost:</strong> <br>
+Fees: Entire weekend - $40 (walk in $45). Registration for fewer days is as follows<br>
+Friday $20 (walk in $25)<br>
+Saturday $20 (walk in $25)<br>
+Sunday $10 (walk in $15)<br>	</p>
+<p>
+LG Triad members are FREE and approved clubs (COWS, CIRCA, UWGB, etc. receive a $5 discount (email <a href="mailto:"lionsquest2000@yahoo.com">lionsquest2000@yahoo.com</a> for approved club list or to add to the list).    The Prereg period ends on 3/7/08. 
+</p>
+</div>
+<?php
+require_once('con_end.php');
+?>
